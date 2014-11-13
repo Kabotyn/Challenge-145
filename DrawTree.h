@@ -4,8 +4,8 @@ class DrawTree {
 	
 private:
 	std::string tree; // ready to show tree
-	int height;
-	char leaves, base;
+	int height;	// number of tree lines
+	char leaves, base; // symbols for leaves and base
 	
 	std::string multipleChar(char c, int times);
 	

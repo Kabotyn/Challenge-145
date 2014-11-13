@@ -35,12 +35,12 @@ std::string DrawTree::multipleChar(char c, int times){
 // generate tree to string variable
 void DrawTree::generateTree() {
 	std::string output = "";
-	int leaves_iterator = 1;
+	int leaves_iterator = 1; // number of leaves in the line start from 1
 	
 	for (int line_number = 1; line_number <= (height - 1); line_number++) {
-		output += multipleChar(' ', (height - line_number - 1));
-		output += multipleChar(leaves, leaves_iterator);
-		leaves_iterator += 2;
+		output += multipleChar(' ', (height - line_number - 1)); // add spaces
+		output += multipleChar(leaves, leaves_iterator); // add leaves
+		leaves_iterator += 2; // next line has 2 leave more
 		
 		output += "\n";
 	}
